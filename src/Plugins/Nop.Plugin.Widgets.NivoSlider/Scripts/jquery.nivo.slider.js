@@ -40,7 +40,7 @@
                 child = child.find('img:first');
             }
             // Get img width & height
-            var childWidth = 25,
+            var childWidth = (childWidth === 0) ? child.attr('width') : child.width(),
                 childHeight = (childHeight === 0) ? child.attr('height') : child.height();
 
             if (link !== '') {
